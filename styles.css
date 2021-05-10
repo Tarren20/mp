@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body {
+  font: 13px 'Audiowide', normal;
+  background: grey;
+  color: black;
+  text-align: center;
+}
+
+.main {
+  background: crimson;
+  padding: 40px;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  background: url("https://www.filterforge.com/filters/9143.jpg");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#first {
+  height: 20px;
+}
+
+#hp_0.hidding{
+  visibility: hidden;
+}
+
+#first.hide {
+  height: auto;
+}
+
+#second {
+  height: 20px;
+}
+
+#hp_1.hidding {
+  visibility: hidden;
+}
+
+#second.hide {
+  height: auto;
+}
+
+#third {
+  height: 20px;
+}
+
+#hp_2.hidding {
+  visibility: hidden;
+}
+
+#third.hide {
+  height: auto;
+}
+
+#four {
+  height: 20px;
+}
+
+#four.hide {
+  height: auto;
+}
+
+#hp_3.hidding {
+  visibility: hidden;
+}
+
+#five {
+  height: 20px;
+}
+
+#hp_4.hidding {
+  visibility: hidden;
+}
+
+#five.hide {
+  height: auto;
+}
+
+#six {
+  height: 20px;
+}
+
+#hp_5.hidding {
+  visibility: hidden;
+}
+
+#six.hide {
+  height: auto;
+}
+
+#seven {
+  height: 20px;
+}
+
+#hp_6.hidding {
+  visibility: hidden;
+}
+
+#seven.hide {
+  height: auto;
+}
+
+#eight {
+  height: 20px;
+}
+
+#hp_7.hidding {
+  visibility: hidden;
+}
+
+#eight.hide {
+  height: auto;
+}
+
+#nine {
+  height: 20px;
+}
+
+#hp_8.hidding {
+  visibility: hidden;
+}
+
+#nine.hide {
+  height: auto;
+}
+
+#ten {
+  height: 20px;
+}
+
+#hp_9.hidding {
+  visibility: hidden;
+}
+
+#ten.hide {
+  height: auto;
+}
+
+#eleven {
+  height: 20px;
+}
+
+#hp_10.hidding {
+  visibility: hidden;
+}
+
+#eleven.hide {
+  height: auto;
+}
+
+#twelve {
+  height: 20px;
+}
+
+#hp_11.hidding {
+  visibility: hidden;
+}
+
+#twelve.hide {
+  height: auto;
+}
+
+.main .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+}
+
+.main h2 {
+  font-size: 1.3rem;
+}
+
+// adapted from [URL]  TimeLine
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
