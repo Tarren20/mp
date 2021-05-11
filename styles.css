@@ -5,11 +5,12 @@ body {
   background: grey;
   color: black;
   text-align: center;
+  zoom: 80%;
 }
 
 .main {
   background: crimson;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .main::after {
@@ -168,7 +169,7 @@ body {
   height: auto;
 }
 
-.main .container {
+.main .main_1 {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -183,11 +184,13 @@ body {
   font-size: 1.3rem;
 }
 
-// adapted from [URL]  TimeLine
+// adapted from [https://www.youtube.com/watch?v=3mvEK8UIjtA&list=LL&index=1&t=88s]  TimeLine
+
+// it is a little change but here down is what I used
 
 .timeline {
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .timeline ol {
@@ -207,7 +210,7 @@ body {
 }
 
 .timeline ol li:last-child {
-  width: 280px;
+  width: 400px;
 }
 
 .timeline ol li:not(:first-child) {
@@ -224,7 +227,7 @@ body {
   height: 12px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #F45B69;
+  background: crimson;
 }
 
 .timeline ol li div {
